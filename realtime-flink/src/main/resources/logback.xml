@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<!--    <property name="LOG_HOME" value="/opt/module/applog/gmall2020" />-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="error"  >
+        <appender-ref ref="console" />
+        <!-- <appender-ref ref="async-rollingFile" />  -->
+    </root>
+</configuration>
